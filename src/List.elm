@@ -441,25 +441,25 @@ If one list is longer, the extra elements are dropped.
     pairs lefts rights =
         map2 (,) lefts rights
 -}
-map2 : (a -> b -> result) -> List a -> List b -> List result
+map2 : (a -> b -> c) -> List a -> List b -> List c
 map2 =
   Elm.Kernel.List.map2
 
 
 {-|-}
-map3 : (a -> b -> c -> result) -> List a -> List b -> List c -> List result
+map3 : (a -> b -> c -> d) -> List a -> List b -> List c -> List d
 map3 =
   Elm.Kernel.List.map3
 
 
 {-|-}
-map4 : (a -> b -> c -> d -> result) -> List a -> List b -> List c -> List d -> List result
+map4 : (a -> b -> c -> d -> e) -> List a -> List b -> List c -> List d -> List e
 map4 =
   Elm.Kernel.List.map4
 
 
 {-|-}
-map5 : (a -> b -> c -> d -> e -> result) -> List a -> List b -> List c -> List d -> List e -> List result
+map5 : (a -> b -> c -> d -> e -> f) -> List a -> List b -> List c -> List d -> List e -> List f
 map5 =
   Elm.Kernel.List.map5
 
